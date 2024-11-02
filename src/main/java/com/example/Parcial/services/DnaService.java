@@ -46,21 +46,21 @@ public class DnaService {
 
     private void validarDna(String[] dna) {
         if (dna == null){
-            throw new IllegalArgumentException("No se permiten valores nulos.");
+            throw new IllegalArgumentException("No se permite recibir un valor nulo.");
         }
         if (dna.length == 0){
-            throw new IllegalArgumentException("No se permite un array vacío");
+            throw new IllegalArgumentException("No se permite un array vacío.");
         }
         int n = dna.length;
         for (String row : dna){
             if (row == null){
-                throw new IllegalArgumentException("No se reciben arrays con valores nulos");
+                throw new IllegalArgumentException("El array contiene valores nulos.");
             }
             if (row.length() != n){
-                throw new IllegalArgumentException("El array debe de ser NxN, no NxM");
+                throw new IllegalArgumentException("El array debe ser de NxN.");
             }
             if (!row.matches("^[ATCG]+$")){
-                throw new IllegalArgumentException("No se reciben valores distintos de 'A', 'T', 'C', 'G'.");
+                throw new IllegalArgumentException("El array contiene caracteres inválidos, solo se permite 'A', 'T', 'C', 'G'.");
             }
         }
     }
