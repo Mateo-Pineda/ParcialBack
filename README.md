@@ -27,7 +27,7 @@ Endpoints Disponibles en Render:
 1. Verificar ADN Mutante
     ############  Ruta: POST /mutant ############
     Descripción: Verifica si una secuencia de ADN corresponde a un mutante.
-    Request Body: Enviar un JSON con la secuencia de ADN en formato NxN. Ejemplo:
+    Request Body: Enviar un JSON con la secuencia de ADN en formato NxN. Ejemplo(Existe la posibilidad de que ya exista dentro del sistema, pruebe con uno distinto en caso de estarlo):
    {
   "dna": ["ATGCGA", "CAGTGC", "TTATGT", "AGAAGG", "CCCCTA", "TCACTG"]
   }
