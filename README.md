@@ -37,7 +37,7 @@ Endpoints Disponibles en Render:
 2. Obtener estadísticas de ADN analizado
     ############ Ruta: GET /mutant/estadistica ############
     Descripción: Devuelve estadísticas de las secuencias de ADN analizadas.
-    Respuesta: JSON con los resultados de la estadística:
+    Respuesta: JSON con los resultados de la estadística (Ejemplo):
    {
   "count_mutant_dna": 40,
   "count_human_dna": 100,
